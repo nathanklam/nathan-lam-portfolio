@@ -20,7 +20,7 @@
 }
 
 .nav-link a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .project-img:hover {
-    transform: scale(1.03); /* Increasing size by 3% */
+    transform: scale(1.5); /* Increasing size by 3% */
 }
 
 .project-title{
