@@ -94,7 +94,8 @@
 
 .project-container {
     width: 494px;
-    padding-right: 5%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
     margin-bottom: 3%;
 }
 
@@ -110,7 +111,7 @@
 .project-img {
     width: 300px;
     height: 195px;
-    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect */
+    transition: transform 0.4s ease-in-out; /* Adding a smooth transition effect */
     cursor: pointer; /* Changing cursor to a hand */
 }
 
