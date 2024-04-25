@@ -1,19 +1,23 @@
 
 .nav-bar {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    font-family: "Libre Baskerville";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: black;
-    justify-content: right;
-    margin-right: 5%;
-    
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 10px; /* Add space at the bottom of the navbar */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+  justify-content: right;
+  margin-right: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0F4C81;
+  z-index: 1000;
 }
-
 .nav-link {
     padding-top: 25px;
     padding-right: 5%;

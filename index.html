@@ -1,166 +1,158 @@
-
 <!DOCTYPE html>
+<html>
 <head>
- 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<html>
+<body>
 
-<!--must be in every page I create-->
-  <div class="nav-bar">
+<div class="nav-bar">
+  <div class="nav-link">
+    <a href="/index.html">Home Page</a>
+  </div>
+  <div class="nav-link dropdown">
+    <a href="#">Main Projects</a>
+    <div class="dropdown-content">
+      <a href="/pages/28-percent-example-page/28percent-example.html">28 Percent Website Example</a>
+      <a href="/pages/project-template.html">Project Template</a>
+    </div>
+  </div>
+  <div class="nav-link">
+    <a href="/pages/Resume/Resume.html">Resume</a>
+  </div>
+</div>
 
-    <div class="nav-link">
-      <a href="../index.html"><p>Home Page</p></a>
-    </div>
-      
-      <div class="nav-link dropdown">
-        <a href="#"><p>Main Projects</a>
-        <div class="dropdown-content">
-          <a href="/pages/28-percent-example-page/28percent-example.html">28 Percent Website Example</a>
-          <a href="/pages/project-template.html">Project Template</a>
-        </div>
-    
-    </div>
-      
-    <div class = "nav-link">
-      <a href="../index.html"><p>Resume</p></a> </div>
+<div class="home-header">
+  <p> Hello! My name is Nathan Lam</p>
+  <p>
+    I am an APP Academy student of Pasadena High School.
+    Professionally interested in STEM, particularly engineering.
+    Personally interested in music and video games.
+    Many of my projects may show intersections between these interests.
+  </p>
+  <p>Take a look at some of my projects or contact me for additional questions - nathan.k.lam04@gmail.com</p>
+</div>
+
+<br> <br>
+
+<div class="project-grid">
+  <br /><p class="project-title">APP Academy Projects</p> <br /><br />
+  <div class="project-row">
+    <div class="project-container">
+      <div class="project-inner-container" style="background: #4FD1C5">
+        <img src="./home-page-assets/Godot-Game.png" class="project-img"/>
+      </div>
+      <p class="project-title">Rhythm/Combat Game</p>
+      <a class="project-link" href="pages/Godot-Game/Godot-Game.html"> Learn more about this project </a> <br>
+      <a class="project-link" href="https://github.com/nathanklam/godot_repo"> See the Github Repository </a>
+      <p class="project-description">
+        2-D game combining aspects of rhythm and combat games.
+        Built using the Godot Engine in GDScript.
+        Currently a proof of concept with simple visuals.
+      </p>
     </div>
 
-  <div class="home-header">
-    <p> Hello! My name is Nathan Lam</p>
-    <p>
-        I am an APP Academy student of Pasadena High School. 
-        Professionally interested in STEM, particularly engineering. 
-        Personally interested in music and video games.
-        Many of my projects may show intersections between these interests.
-    </p>
-    <p>  Take a look at some of my projects or contact me for additional questions - nathan.k.lam04@gmail.com</p>
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/VR-Scene.png" class="project-img"/>
+      </div>
+      <p class="project-title">VR Project: Trenches</p>
+      <a class="project-link" href="/pages/28percent-example.html"> Learn more about this project </a> <br>
+      <a class="project-link" href="https://github.com/nathanklam/vr-project"> See the Github Repository </a>
+      <p class="project-desc">
+        A VR scene inspired by the trenches of WW1.
+        Includes simple directional/positional audio.
+        Developed utilizing A-Frame (HTML, CSS, and JavaScript).
+      </p>
+    </div>
   </div>
 
-  <br> <br>
-
-  <div class="project-grid">
-    <br /><p class="project-title">APP Academy Projects</p> <br /><br />
-    <div class="project-row">
-      <div class="project-container">
-        <div class="project-inner-container" style="background: #ffe5fb">
-            <img src="./home-page-assets/Godot-Game.png" class="project-img"/>
-        </div>
-        <p class="project-title">Rhythm/Combat Game</p>
-        <a class="project-link" href="/pages/28percent-example.html"> Learn more about this project </a> <br>
-        <a class="project-link" href="https://github.com/nathanklam/godot_repo"> See the Github Repository </a>
-        <p class="project-description">
-          2-D game combining aspects of rhythm and combat games. 
-          Built using the Godot Engine in GDScript. 
-          Currently a proof of concept with simple visuals.
-        </p>
+  <div class="project-row">
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/Create-Task.png" class="project-img"/>
       </div>
-
-      <div class="project-container">
-        <div class="project-inner-container" style="background: #d7eed5">
-          <img src="./home-page-assets/VR-Scene.png" class="project-img"/>
-        </div>
-        <p class="project-title">VR Project: Trenches</p>
-        <a class="project-link" href="/pages/28percent-example.html"> Learn more about this project </a> <br>
-        <a class="project-link" href="https://github.com/nathanklam/vr-project"> See the Github Repository </a>
-        <p class="project-desc">
-          A VR scene inspired by the trenches of WW1. 
-          Includes simple directional/positional audio. 
-          Developed utilizing A-Frame (HTML, CSS, and JavaScript).
-        </p>
-      </div>
+      <p class="project-title">Coin-Based Combat Game</p>
+      <a class="project-link" href="https://replit.com/@NathanLam3/Create-Task"> See the code on Replit </a> <br>
+      <p class="project-description">
+        For the create task of the AP Computer Science Principles Exam,
+        developed a game in Python based on the simplified mechanics of those found in the game Limbus Company.
+      </p>
     </div>
 
-    <div class="project-row">
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #ffe5fb">
-              <img src="./home-page-assets/Create-Task.png" class="project-img"/>
-          </div>
-          <p class="project-title">Coin-Based Combat Game</p>
-          <a class = "project-link" href="https://replit.com/@NathanLam3/Create-Task"> See the code on Replit </a> <br>
-          <p class="project-description">
-            For the create task of the AP Computer Science Principles Exam, 
-            developed a game in Python based on the simplified mechanics of those found in the game Limbus Company.
-          </p>
-        </div>
-  
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #d7eed5">
-            <img src="./home-page-assets/Caesar-Cipher.png" class="project-img"/>
-          </div>
-          <p class="project-title">Encryption Project</p>
-          <a class="project-link" href="https://replit.com/@NathanLam3/caesar-cipher-2"> See the code on Replit </a>
-          <p class="project-desc">
-            A Caesar Cipher created in Python but with added complexities to make it more advanced and intersting.
-          </p>
-        </div>
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/Caesar-Cipher.png" class="project-img"/>
+      </div>
+      <p class="project-title">Encryption Project</p>
+      <a class="project-link" href="https://replit.com/@NathanLam3/caesar-cipher-2"> See the code on Replit </a>
+      <p class="project-desc">
+        A Caesar Cipher created in Python but with added complexities to make it more advanced and interesting.
+      </p>
+    </div>
+  </div>
+
+  <br /><p class="project-title">Other Projects</p> <br /><br />
+  <div class="project-row">
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/Caltech-SRC.png" class="project-img"/>
+      </div>
+      <p class="project-title">Caltech SRC: WINTER</p>
+      <a class="project-link" href="/pages/28percent-example.html"> Learn more about this project </a> <br>
+      <a class="project-link" href="https://github.com/robertdstein/snowshovel"> See the Github Repository </a>
+      <p class="project-description">
+        Developed code in Python for a team in the Caltech astronomy/astrophysics department working on the WINTER infrared telescope.
+      </p>
+    </div>
+
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/Plane-Launcher.png" class="project-img"/>
+      </div>
+      <p class="project-title">3D Printed Plane Launcher</p>
+      <a class="project-link" href="pages/Plane-Launcher/Plane-Launcher.html"> Learn more about this project </a><br>
+      <p class="project-desc">
+        Mechanism designed utilizing CAD software and 3D printed for our high school's robotics team for the FIRST Tech Challenge: IFC #15157.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="project-row">
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/28-percent-site.png" class="project-img"/>
+      </div>
+      <p class="project-title">Music Arrangements for Piano</p>
+      <a class="project-link" href="/pages/28percent-example.html"> View my Published Arrangements</a><br>
+      <p class="project-description">
+        Utilizing the MuseScore 4 notation software, I arrange existing pieces of music from my favorite media (such as video games) to be played for the piano.
+      </p>
+    </div>
+
+    <div class="project-container">
+      <div class="project-inner-container">
+        <img src="./home-page-assets/barr-form.png" class="project-img"/>
       </div>
 
-      <br /><p class="project-title">Other Projects</p> <br /><br />
-      <div class="project-row">
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #ffe5fb">
-              <img src="./home-page-assets/Caltech-SRC.png" class="project-img"/>
-          </div>
-          <p class="project-title">Caltech SRC: WINTER</p>
-          <a class = "project-link" href="/pages/28percent-example.html"> Learn more about this project </a> <br>
-          <a class = "project-link" href="https://github.com/robertdstein/snowshovel"> See the Github Repository </a>
-          <p class="project-description">
-            Developed code in Python for a team in the Caltech astronomy/astrophysics department working on the WINTER infrared telescope.
-          </p>
-        </div>
-  
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #d7eed5">
-              <img src="./home-page-assets/Plane-Launcher.png" class="project-img"/>
-          </div>
-          <p class="project-title">3D Printed Plane Launcher</p>
-          <a class="project-link" href="#"> Learn more about this project </a><br>
-          <p class="project-desc">
-            Mechanism designed utilizing CAD software and 3D printed for our high school's robotics team for the FIRST Tech Challenge: IFC #15157. 
-          </p>
-        </div>
-      </div>
-
-    
-      <div class="project-row">
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #ffe5fb">
-              <img src="./home-page-assets/28-percent-site.png" class="project-img"/>
-          </div>
-          <p class="project-title">Music Arrangements for Piano</p>
-          <a class = "project-link" href="/pages/28percent-example.html">View my Published Arrangements</a><br>
-          <p class="project-description">
-            Utilizing the MuseScore 4 notation software, I arrange existing pieces of music from my favority media (such as video games) to be played for the piano.
-          </p>
-        </div>
-  
-        <div class="project-container">
-          <div class="project-inner-container" style="background: #d7eed5">
-            <img src="./home-page-assets/barr-form.png" class="project-img"
-            />
-          </div>
-  
-          <p class="project-title">Were the Atomic Bombs Necessary?</p>
-          <a class="project-link" href="https://docs.google.com/document/d/1zGtnYbZVg_oxVwFt6-u6-g1FwMpnRGaQwW1IQjMwFuo/edit">Read the paper</a>
-          <!--note that this is only on school account, can't be seen elsewhere -->
-          <p class="project-desc">
-            A research paper written as the final project of the AP US History course. 
-            Details the facts of the event and explores hypotheticals if atomic bombs were not utilized.
-          </p>
-        </div>
-      </div>
-
-    <br /><br /><br />
-   
+      <p class="project-title">Were the Atomic Bombs Necessary?</p>
+      <a class="project-link" href="https://docs.google.com/document/d/1zGtnYbZVg_oxVwFt6-u6-g1FwMpnRGaQwW1IQjMwFuo/edit">Read the paper</a>
+      <!--note that this is only on school account, can't be seen elsewhere -->
+      <p class="project-desc">
+        A research paper written as the final project of the AP US History course.
+        Details the facts of the event and explores hypotheticals if atomic bombs were not utilized.
+      </p>
+    </div>
   </div>
 
   <br /><br /><br />
 
+</div>
+
+<br /><br /><br />
+
+</body>
 </html>
