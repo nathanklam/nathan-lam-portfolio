@@ -14,19 +14,22 @@ body {
     line-height: normal;
     color: black;
     justify-content: right;
-    margin-right: 5%;
+    margin-right: 0%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #0F4C81;
     z-index: 1000;
+    height: 50px;
+    justify-content: right;
   }
   
   
   .nav-link {
     padding-top: 25px;
     padding-right: 5%;
+    text-align: left; /* Align text within nav-links to the right */
   }
   
   .nav-link a {
@@ -37,27 +40,37 @@ body {
   .nav-link a:hover {
     text-decoration: underline;
   }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    z-index: 1;
-    border: solid;
-    border-color: black;
-    border-radius: 5px;
+
+  .nav-link.active a {
+    text-decoration: underline; /* Style the active link differently */
+    pointer-events: none; /* Make the active link unclickable */
   }
-  
+
+.dropdown-content {
+    /* Your existing styles */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.4s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
+}
   .dropdown-content a {
     font-family: "Libre Baskerville";
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;
     color: black;
-    padding: 12px 16px;
+    padding: 12px 12px;
     text-decoration: none;
     display: block;
+    background-color: #0F4C81;
   }
   
   .dropdown-content a:hover {
