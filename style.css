@@ -1,13 +1,29 @@
 /* style.css */
+/* Add a CSS animation to fade in the elements */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Apply the animation to the elements */
+.project-container.animate {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+
 body {
-    background-color: #F0F0F0;
+    background-color: #cecece;
   }
 
-.nav-bar {
+  .nav-bar {
     display: flex;
     flex-direction: row;
     padding-top: 0px;
-    padding-bottom: 20px; /* Add space at the bottom of the navbar */
+    padding-bottom: 15px; /* Add space at the bottom of the navbar */
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -23,7 +39,8 @@ body {
     z-index: 1000;
     height: 50px;
     justify-content: right;
-  }
+    border-bottom: 5px solid #313760; /* Add a border at the bottom with a different color */
+}
   
   
   .nav-link {
@@ -139,7 +156,7 @@ body {
   }
   
   .project-title {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     color: #030303;
     font-family: "Libre Baskerville";
     font-size: 30px;
