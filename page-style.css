@@ -17,7 +17,7 @@ do i want similar/identical structure for all???? */
   
   
 body {
-    background-color: #cecece;
+    background-color: #ffffff;
 }
   
 .nav-bar {
@@ -137,6 +137,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.pbsection-header{
+    color: #030303;
+    font-family: "Libre Baskerville";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;  
 }
 
 .pbsection-body{
