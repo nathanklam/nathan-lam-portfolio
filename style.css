@@ -23,7 +23,7 @@
 }
 .dtitle {
   color: #fff;
-  font-family: "Libre Baskerville";
+  font-family: "Roboto";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -36,6 +36,7 @@ body {
   }
 
   .nav-bar {
+    font-family: Roboto;
     display: flex;
     flex-direction: row;
     padding-top: 0px;
@@ -85,6 +86,9 @@ body {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.4s ease;
+    border: solid;
+    border-color: rgb(29, 89, 173);
+    border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -94,7 +98,7 @@ body {
     transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
 }
   .dropdown-content a {
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 200;
@@ -119,12 +123,12 @@ body {
     text-align: center;
     align-items:center;
     margin:auto;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 0%;
+    padding-top: 0%;
     width: 754px;
     height: 150px;
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 20px; 
     font-weight: lighter;
     line-height: normal;
@@ -174,7 +178,7 @@ body {
   .project-title {
     margin-bottom: 5px;
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -183,7 +187,7 @@ body {
   
   .project-link {
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -194,7 +198,4 @@ body {
     margin-top: 0.5;
     color: #030303;
   }
-/*
-  body, .nav-bar, .nav-link, .dropdown-content a, .home-header, .project-title, .project-link, .project-desc {
-    font-family: "Helvetica", sans-serif; /* You can replace "Arial" with any sans-serif font you prefer */
-/*  }
+

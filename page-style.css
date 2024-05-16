@@ -21,6 +21,7 @@ body {
 }
   
 .nav-bar {
+    font-family: Roboto;
     display: flex;
     flex-direction: row;
     padding-top: 0px;
@@ -70,6 +71,9 @@ body {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.4s ease;
+    border: solid;
+    border-color: rgb(29, 89, 173);
+    border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -79,7 +83,7 @@ body {
     transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
 }
 .dropdown-content a {
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 200;
@@ -109,9 +113,9 @@ body {
     width: auto;
     height: 0px; /*should be changed*/
     color: #030303;
-    font-family: "Libre Baskerville";
-    font-size: 30px; 
-    font-weight: lighter;
+    font-family: "Roboto";
+    font-size: 36px; 
+    font-weight: 700;
     line-height: normal;
   }
 
@@ -132,7 +136,7 @@ body {
 
 .pbsection-title{
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -141,7 +145,7 @@ body {
 
 .pbsection-header{
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -150,7 +154,7 @@ body {
 
 .pbsection-body{
     color: #030303;
-    font-family: "Libre Baskerville";
+    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
