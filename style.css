@@ -1,11 +1,17 @@
-/* style.css */
+/* CSS Reset for padding and margins only */
+body, .display, .project-grid, .project-row, .nav-bar, .nav-link, .dropdown-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Add a CSS animation to fade in the elements */
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -16,186 +22,188 @@
 
 .display {
   width: 100%;
-  padding-left: 0%;
-  padding-right: 0%;
-  margin: 0;
   height: 500px;
 }
+
 .dtitle {
   color: #fff;
   font-family: "Roboto";
+  padding-top: 50px;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
   margin: 0; /* Remove padding-top and use margin to center vertically */
 }
 
 body {
-    background-color: #ffffff;
-  }
-
-  .nav-bar {
-    font-family: Roboto;
-    display: flex;
-    flex-direction: row;
-    padding-top: 0px;
-    padding-bottom: 15px; /* Add space at the bottom of the navbar */
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: black;
-    justify-content: right;
-    margin-right: 0%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0F4C81;
-    z-index: 1000;
-    height: 50px;
-    justify-content: right;
-    border-bottom: 5px solid #313760; /* Add a border at the bottom with a different color */
+  background-color: #ffffff;
 }
-  
-  
-  .nav-link {
-    padding-top: 25px;
-    padding-right: 5%;
-    text-align: left; /* Align text within nav-links to the right */
-  }
-  
-  .nav-link a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-link a:hover {
-    text-decoration: underline;
-  }
 
-  .nav-link.active a {
-    text-decoration: underline; /* Style the active link differently */
-    pointer-events: none; /* Make the active link unclickable */
-  }
+.nav-bar {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 0px; /* Add space at the bottom of the navbar */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+  justify-content: right;
+  margin-right: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0F4C81;
+  z-index: 1000;
+  height: 100px;
+  justify-content: right;
+  border-bottom: 5px solid #313760; /* Add a border at the bottom with a different color */
+}
+
+.nav-link {
+  padding-top: 25px;
+  padding-right: 5%;
+  text-align: left; /* Align text within nav-links to the right */
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active a {
+  text-decoration: underline; /* Style the active link differently */
+  color: #fff;
+  pointer-events: none; /* Make the active link unclickable */
+}
 
 .dropdown-content {
-    /* Your existing styles */
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.4s ease;
-    border: solid;
-    border-color: rgb(29, 89, 173);
-    border-radius: 5px;
+  /* Your existing styles */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.4s ease;
+  border: solid;
+  border-color: rgb(29, 89, 173);
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
 }
-  .dropdown-content a {
-    font-family: "Roboto";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-    background-color: #0F4C81;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ffffff;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .home-header {
-    justify-content: center;
-    text-align: center;
-    align-items:center;
-    margin:auto;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    width: 754px;
-    height: 150px;
-    color: #030303;
-    font-family: "Roboto";
-    font-size: 20px; 
-    font-weight: lighter;
-    line-height: normal;
-  }
 
-  .project-grid {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .project-row {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-  .project-container {
-    width: 494px;
-    margin: 0 20px; /* Add margin to create space between project containers */
-    margin-bottom: 3%
-  }
-  
-  .project-inner-container {
-    width: 494px;
-    height: 300px;
-    display:flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    background: #4FD1C5;
-  }
-  
-  .project-img {
-    width: 320px;
-    height: 180px;
-    transition: transform 0.4s ease-in-out; /* Adding a smooth transition effect */
-    cursor: pointer; /* Changing cursor to a hand */
-  }
-  
-  .project-img:hover {
-    transform: scale(1.5); /* Increasing size by 3% */
-  }
-  
-  .project-title {
-    margin-bottom: 5px;
-    color: #030303;
-    font-family: "Roboto";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1;
-  }
-  
-  .project-link {
-    color: #030303;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-  
-  .project-desc {
-    margin-top: 0.5;
-    color: #030303;
-  }
+.dropdown-content a {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  background-color: #0F4C81;
+}
 
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.home-header {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 4%;
+  padding-top: 0%;
+  width: 754px;
+  height: 150px;
+  color: #030303;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-container {
+  width: 494px;
+  margin: 0 20px; /* Add margin to create space between project containers */
+  margin-bottom: 3%;
+}
+
+.project-inner-container {
+  width: 494px;
+  height: 300px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  width: 320px;
+  height: 180px;
+  transition: transform 0.4s ease-in-out; /* Adding a smooth transition effect */
+  cursor: pointer; /* Changing cursor to a hand */
+}
+
+.project-img:hover {
+  transform: scale(1.5); /* Increasing size by 3% */
+}
+
+.project-title {
+  margin-bottom: 5px;
+  color: #030303;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.project-link {
+  color: #030303;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.project-desc {
+  margin-top: 0.5;
+  color: #030303;
+  font-family: "Roboto";
+}

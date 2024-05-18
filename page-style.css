@@ -39,7 +39,7 @@ body {
     width: 100%;
     background-color: #0F4C81;
     z-index: 1000;
-    height: 50px;
+    height: 100px;
     justify-content: right;
     border-bottom: 5px solid #313760; /* Add a border at the bottom with a different color */
 }
@@ -62,6 +62,7 @@ body {
 
 .nav-link.active a {
     text-decoration: underline; /* Style the active link differently */
+    color:#ffffff;
     pointer-events: none; /* Make the active link unclickable */
 }
 
