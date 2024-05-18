@@ -1,31 +1,36 @@
-/* style.css but for the pages themselves??? 
-do i want similar/identical structure for all???? */
-/* Add a CSS animation to fade in the elements */
-@keyframes fadeIn {
+/* CSS Reset for padding and margins only */
+body, .display, .project-grid, .project-row, .nav-bar, .nav-link, .dropdown-content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Add a CSS animation to fade in the elements */
+  @keyframes fadeIn {
     from {
-        opacity: 0;
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      opacity: 1;
     }
   }
   
   /* Apply the animation to the elements */
-.project-container.animate {
+  .project-container.animate {
     animation: fadeIn 0.5s ease forwards;
-}
+  }
   
-  
-body {
+  body {
     background-color: #ffffff;
-}
+  }
   
-.nav-bar {
+  /*nav bar stuff*/
+  .nav-bar {
     font-family: Roboto;
     display: flex;
     flex-direction: row;
-    padding-top: 0px;
-    padding-bottom: 15px; /* Add space at the bottom of the navbar */
+    padding-top: 30px;
+    padding-bottom: 0px; /* Add space at the bottom of the navbar */
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -42,31 +47,30 @@ body {
     height: 100px;
     justify-content: right;
     border-bottom: 5px solid #313760; /* Add a border at the bottom with a different color */
-}
-    
-
-.nav-link {
+  }
+  
+  .nav-link {
     padding-top: 25px;
     padding-right: 5%;
     text-align: left; /* Align text within nav-links to the right */
-}
-
-.nav-link a {
+  }
+  
+  .nav-link a {
     text-decoration: none;
     color: black;
-}
-
-.nav-link a:hover {
+  }
+  
+  .nav-link a:hover {
     text-decoration: underline;
-}
-
-.nav-link.active a {
+  }
+  
+  .nav-link.active a {
     text-decoration: underline; /* Style the active link differently */
-    color:#ffffff;
+    color: #fff;
     pointer-events: none; /* Make the active link unclickable */
-}
-
-.dropdown-content {
+  }
+  
+  .dropdown-content {
     /* Your existing styles */
     opacity: 0;
     visibility: hidden;
@@ -75,15 +79,16 @@ body {
     border: solid;
     border-color: rgb(29, 89, 173);
     border-radius: 5px;
-}
-
-.dropdown:hover .dropdown-content {
+  }
+  
+  .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: opacity 0.3s ease, visibility 0s linear, transform 0.4s ease; /* Include easing both down and up */
-}
-.dropdown-content a {
+  }
+  
+  .dropdown-content a {
     font-family: "Roboto";
     font-size: 15px;
     font-style: normal;
@@ -94,17 +99,20 @@ body {
     text-decoration: none;
     display: block;
     background-color: #0F4C81;
-}
-
-.dropdown-content a:hover {
+  }
+  
+  .dropdown-content a:hover {
     background-color: #ffffff;
-}
-
-.dropdown:hover .dropdown-content {
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.page-header {
+  }
+  
+  /*end of nav bar stuff*/
+  
+  /*start of everything else*/
+  .page-header {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -119,45 +127,53 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-
-.page-body {
+  
+  .page-body {
     display: flex;
     flex-direction: column;
-}
-
-.pbody-section{
-    width: 100%; /* Change to a larger width if necessary */
-    max-width: 936px; /* Add max-width to limit the width */
+    justify-content: flex-start;
+  }
+  
+  .pbody-section {
+    width: 90%; /* Adjust width to cover a larger portion of the page */
+    max-width: 1200px; /* Adjust max-width to limit the width on larger screens */
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 20px; /* Add padding to create space around the content */
     box-sizing: border-box;
-}
-
-.pbsection-title{
+  }
+  
+  .pbsection-title {
     color: #030303;
     font-family: "Roboto";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.pbsection-header{
+  }
+  
+  .pbsection-header {
     color: #030303;
     font-family: "Roboto";
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;  
-}
-
-.pbsection-body{
+  }
+  
+  .pbsection-body {
     color: #030303;
     font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
+  }
+  
+  .side-by-side {
+    width: 100%; /* Ensure it spans the full width */
+    display: flex;
+    flex-direction: row;
+  }
+  
