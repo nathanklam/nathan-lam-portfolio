@@ -177,3 +177,7 @@ body, .display, .project-grid, .project-row, .nav-bar, .nav-link, .dropdown-cont
     flex-direction: row;
   }
   
+  .project-img {
+    width: 50%;
+    height: 50%;
+  }
