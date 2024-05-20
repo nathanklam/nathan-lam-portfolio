@@ -4,8 +4,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../page-style.css" />
-  <link rel="stylesheet" type="text/css" href="../../page-style.css" />
 </head>
+
 <html>
     <div class="nav-bar">
       <div class="nav-bar">
@@ -27,52 +27,141 @@
         </div>
       </div>
     </div>
-    <div class="page-header">
-      <p>Caltech Summer Research Connection: WINTER<p>
+
+    <div style="background-color: #d6782b;"class="page-header">
+      <p>Caltech Summer Research Connection: WINTER</p>
+      <br>
     </div>
     <div class="page-body">
       <div class="pbody-section">
         <p class="pbsection-title">Background</p>
           <p class="pbsection-header">SRC</p>
-            <p class="pbsection-body">
-              The Caltech Research Connection is ...
-              <!--some link to website/program-->
-            </p>
-          <p class="pbsection-header">WINTER</p>
-            <p class="pbsection-body"> 
-              The Wide Field INfrared observeR is a newly designed telescope located
-              on Mt. Palomar.
-          </p>
-          <!--an image here or somewhere-->
-      </div>
+            <div class="side-by-side">
+              <div>
+                <p class="pbsection-body">
+                  The Caltech Summer Research Connection
+                </p>
+                <a style="font-family: Roboto;" href="https://www.firstinspires.org/robotics/ftc">Read more about it here!</a>
+              </div>
+                <div class="img-setup">
+                  <img class="img" style="width: 300px" src="./Plane-Launcher-Assets/FTC.png"/>
+                  <p class="caption"></p>
+                </div>
+            </div>
 
+              <p class="pbsection-header">WINTER</p>
+                <div class="side-by-side">
+                  <p class="pbsection-body">
+                    The Wide-Field INfrared Transient exploreR
+                  </p>
+                  <div ckass="img-setup">
+                    <img class="img" src="./Plane-Launcher-Assets/Team.jpg"/>
+                    <p class="caption">Team Photo (Fourth from the Right)</p>
+                  </div>
+              </div> 
+      </div>
 
       <div class="pbody-section">
-        <p class="pbsection-title">Work</p>
-          <p class="pbsection-header">Preparation and Setup</p>
-            <p class="pbsection-body">yesn't
+        <p class="pbsection-title">Iterations and Design Process</p>
+          <p class="pbsection-header">First iteration</p>
+          <div class="side-by-side">
+            <p class="pbsection-body">Our initial design was a makeshift 
+              improvisation utilizing frame parts that we had at hand. As a result, 
+              many aspects were not optimized. They thus were prone to experiencing 
+              many errors (band tension loosening over time, the plane getting stuck 
+              during launch, the plane falling out in the case of any sudden robot 
+              movements, etc.).
             </p>
-          <!--image of first iteration (lmao)-->
-          <p class="pbsection-header">Development</p>
-            <p class="pbsection-body">chatgpt my beloved
+            <!--
+            <div class="img-setup">
+              <img class="img" src="./Plane-Launcher-Assets/First-Iteration.png"/>
+              <p class="caption"></p>
+            </div>
+            image of first iteration (lmao)-->
+          </div>
 
-            </p>
-
-          <p class="pbsection-header">Final Product and Presentation</p>
-            <p class="pbsection-body">later...
-              
-            </p>
+          <p class="pbsection-header">Second Iteration</p>
+            <div class="side-by-side">
+              <p class="pbsection-body">
+                To improve this design, I decided to start from scratch. 
+                I was aware of many existing mechanisms that already exist 
+                (such as those found on a crossbow). However, I did not want to base my design 
+                on existing creations as that may cause me to exhibit convergent thinking 
+                rather than divergent thinking, which was needed in order to brainstorm and create 
+                something suitable for our task. Though it ended up having similarities to 
+                the mechanism of a crossbow, it is far more suited for our own objectives.
+                <br>
+                <br>
+                The process began by visualizing mechanisms and drawing them (I unfortunately did not take any photos). 
+                I then selected what I believed to be most applicable and efficient for launching a plane. 
+                Afterward, I spent countless hours creating the overall launcher on the CAD software Fusion 360. 
+                During this process, I had to constantly consider how to split up the launcher in order to allow for modularity 
+                and proper 3D printing and how to integrate it with our robot as a whole. After finally finishing the model, 
+                I printed out the parts and assembled it.
+              </p>
+              <div class="img-setup">
+                <img class="img" style="width: 300px" src="./Plane-Launcher-Assets/CAD.png"/>
+                <p class="caption">Full CAD (Plane for Display) </p>
+              </div>
+            </div>
+            
+          <p class="pbsection-header">Final Results</p>
+            <div class="side-by-side">
+              <div class="img-setup">
+                <img class="img" style="width: 300px" src="./Plane-Launcher-Assets/IRL.png"/>
+                <p class="caption">Assembled Plane Launcher (With Added Components)</p>
+              </div>
+              <p class="pbsection-body">
+                As the printer struggled to produce the pieces to the exact specifications I desired, the final version comprised of
+                parts of different filament colors, had additional improvisations, and was generally flimsy. Improvisations include 
+                the drilling of additional holes to allow for the addition of limbs for the elastic material. At the very least, the 
+                mechanisms work as intended, allowing for this first prototype to be efficiently loaded and taken apart while also ensuring
+                precision and ease of use.
+              </p>
+          </div>
       </div>
+
+      <br><br>
+      <!--
+      <div class="pbody-section">
+        <p class="pbsection-title">Additional Images</p>
+          <p class="pbsection-header">Parts</p>
+          <div class="side-by-side">
+            <div class="img-setup">
+              <img class="img" src="./Plane-Launcher-Assets/Printer-Ready.png"/>
+              <p class="caption">Parts Arranged to be 3D Printed</p>
+            </div>
+            <div class="img-setup">
+              <img class="img" src="./Plane-Launcher-Assets/Mechanism-Detail.png"/>
+              <p class="caption">Cutaway View of Main System</p>
+            </div>
+          </div>
+      </div>
+      -->
+      <br><br>
 
       <div class="pbody-section">
           <p class="pbsection-title">Reflection</p>
-            <p class="pbsection-body"> really enjoyed research in this manner
-
+            <p class="pbsection-body">
             </p>
       </div>
 
-
     </div>
 
-    
+    <br><br>
+
+  <div
+    style="
+      height: 30px;
+      width: 100%;
+      margin: 0;
+      flex-shrink: 0;
+      background-color: #d6782b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    "
+  ></div>
 </html>

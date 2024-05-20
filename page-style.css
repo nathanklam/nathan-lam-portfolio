@@ -23,12 +23,7 @@ body, .display, .project-grid, .project-row, .nav-bar, .nav-link, .dropdown-cont
 body {
   background-color: #ffffff;
 }
-body.home-page {
-  background-color: #E0444E; /* Home page background color */
-}
-.bgcolor-red{
-  background-color: #E0444E;
-}
+
 /*nav bar stuff*/
 .nav-bar {
   font-family: Roboto;
@@ -145,7 +140,7 @@ body.home-page {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 20px; /* Add padding to create space around the content */
+  padding: 0px; /* Add padding to create space around the content */
   box-sizing: border-box;
 }
 
@@ -173,7 +168,7 @@ body.home-page {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .side-by-side {
@@ -203,3 +198,4 @@ body.home-page {
   font-size: 14px; /* Adjust the size as needed */
   color: #030303; /* Color of the caption text */
 }
+
