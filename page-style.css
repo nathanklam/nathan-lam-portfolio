@@ -183,7 +183,23 @@ body.home-page {
   gap: 30px; /* Add space between the flex items */
 }
 
-.project-img {
-  width: 50%;
-  height: 50%;
+/* New styles for project container, images, and captions */
+.img-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Adjust as needed */
+}
+
+.img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.caption {
+  margin-top: 10px; /* Adds space between the image and the caption */
+  text-align: center; /* Centers the text within the caption */
+  font-family: "Roboto"; /* Matches the font with the rest of the site */
+  font-size: 14px; /* Adjust the size as needed */
+  color: #030303; /* Color of the caption text */
 }
